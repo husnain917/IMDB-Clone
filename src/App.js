@@ -7,6 +7,7 @@ import Navigation from './navigation/Navigation';
 import ScrollToTop from './navigation/ScrollToTop';
 import { useDispatch } from 'react-redux';
 import { getLoggedInUser } from './redux/actions/AuthAction';
+import GenreList from './modules/genreList/GenreList';
 
 function App() {
   const history = createBrowserHistory({ window });
@@ -23,6 +24,7 @@ function App() {
         <ScrollToTop />
         <Navigation />
       </HistoryRouter>
+      {/* <GenreList /> */}
     </div>
   );
 }
